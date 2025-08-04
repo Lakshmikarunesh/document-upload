@@ -13,7 +13,6 @@ A full-stack web application designed for secure management of medical documents
 - **Maintainability**: Component isolation and reusability reduce technical debt
 - **Medical Context**: Proven in healthcare applications requiring reliability and user trust
 
-### Backend: Node.js with Express
 ### Backend: Python 3.8+ with FastAPI
 - **Modern Async Framework**: FastAPI provides excellent performance with native async/await support
 - **Automatic API Documentation**: Built-in interactive Swagger UI and ReDoc documentation
@@ -35,12 +34,7 @@ A full-stack web application designed for secure management of medical documents
 - **MongoDB**: Document structure unnecessary for simple metadata storage
 - **MySQL**: Additional complexity without benefits for this use case
 
-## 3. Scaling Considerations (1000+ Users)
 
-### Database Migration Path
-1. **Phase 1 (1-10 users)**: Continue with SQLite
-2. **Phase 2 (10-100 users)**: Migrate to PostgreSQL with connection pooling
-3. **Phase 3 (100-1000+ users)**: Add read replicas and implement caching
 
 ### Infrastructure Evolution
 - **File Storage**: Migrate from local storage to cloud storage (AWS S3, Azure Blob)
@@ -235,12 +229,6 @@ CREATE INDEX idx_documents_created_at ON documents(created_at DESC);
 - **Input Validation**: All inputs validated and sanitized
 - **Error Handling**: No sensitive information leaked in error messages
 
-### Future Security Enhancements
-- **Authentication**: JWT-based user authentication
-- **Authorization**: Role-based access control
-- **Encryption**: File encryption at rest
-- **Audit Logging**: Comprehensive access logging
-- **Rate Limiting**: API rate limiting to prevent abuse
 
 ## 8. Assumptions & Constraints
 
@@ -262,29 +250,3 @@ CREATE INDEX idx_documents_created_at ON documents(created_at DESC);
 - **Availability**: Single point of failure with local deployment
 - **Scalability**: Limited to single server deployment
 - **Integration**: No integration with existing medical systems
-
-## 9. Future Enhancements
-
-### Phase 1: Enhanced Security
-- User authentication and session management
-- Role-based access control
-- File encryption at rest
-- Audit logging and monitoring
-
-### Phase 2: Advanced Features
-- Document categorization and tagging
-- Full-text search within PDF documents
-- Document versioning and history
-- Automated backup and recovery
-
-### Phase 3: Integration & Compliance
-- HIPAA compliance features
-- Integration with electronic health records (EHR)
-- API for third-party medical applications
-- Advanced analytics and reporting
-
-### Phase 4: Scale & Performance
-- Cloud deployment with high availability
-- Advanced caching and performance optimization
-- Machine learning for document classification
-- Mobile application development
