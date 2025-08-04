@@ -308,17 +308,7 @@ def validate_pdf_file(file: UploadFile) -> bool:
     # Add additional validation logic here
 ```
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature-name`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin feature-name`
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License.
 
 ## 🆘 Troubleshooting
 
@@ -354,22 +344,3 @@ python server/setup.py
 # Ensure uploads directory has proper permissions
 chmod 755 server/uploads
 ```
-
-### Support
-
-For issues and questions:
-1. Check the troubleshooting section above
-2. Review the API documentation
-3. Check server logs for error messages
-4. Ensure all dependencies are properly installed
-
-## 🔮 Future Enhancements
-
-- User authentication and multi-user support
-- Document categorization and tagging
-- Full-text search within PDF documents
-- Cloud storage integration (AWS S3, Google Cloud)
-- HIPAA compliance features
-- Mobile application
-- Document versioning
-- Automated backups
